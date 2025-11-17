@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>404 - Page Not Found</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-900 text-white overflow-x-hidden">
+  <!-- Header -->
+  <header class="sticky top-0 inset-x-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="/" class="-m-1.5 p-1.5">
+          <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt=""
+            class="h-8 w-auto" />
+        </a>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="/home" class="text-sm font-semibold text-white hover:text-indigo-400">Home</a>
+        <a href="/about" class="text-sm font-semibold text-white hover:text-indigo-400">About</a>
+        <a href="/skills" class="text-sm font-semibold text-white hover:text-indigo-400">Skills</a>
+        <a href="/projects" class="text-sm font-semibold text-white hover:text-indigo-400">Projects</a>
+        <a href="/contact" class="text-sm font-semibold text-white hover:text-indigo-400">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 404 Content -->
+  <main class="flex-grow flex items-center justify-center px-6">
+    <div class="text-center max-w-2xl mx-auto">
+      <!-- 404 Number -->
+      <h1 class="text-9xl font-bold text-indigo-500 mb-4">404</h1>
+      
+      <!-- Error Message -->
+      <h2 class="text-4xl font-semibold mb-4 text-white">Page Not Found</h2>
+      
+      <p class="text-lg text-gray-400 mb-8">
+        Oops! The page you're looking for doesn't exist. It might have been moved or deleted.
+      </p>
+      
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="/" 
+           class="rounded-md bg-indigo-500 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 transition-all">
+          Go Home
+        </a>
+        <button onclick="window.history.back()" 
+                class="rounded-md bg-gray-700 px-6 py-3 text-sm font-semibold text-white hover:bg-gray-600 transition-all">
+          Go Back
+        </button>
+      </div>
+
+      <!-- Decorative Icon -->
+      <div class="mt-12">
+        <svg class="w-48 h-48 mx-auto opacity-20 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+    © 2025 Ashish Pokhrel. All rights reserved.
+  </footer>
+
+</body>
+
+</html>

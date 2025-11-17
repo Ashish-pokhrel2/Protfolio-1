@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="index.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="images/favicon_io/site.webmanifest">
+  <title>Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-900 text-white overflow-x-hidden">
+  <header class="sticky top-0 inset-x-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="/" class="-m-1.5 p-1.5">
+          <span class="text-xl font-bold text-indigo-500">Ashish Pokhrel</span>
+        </a>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="/" class="text-sm font-semibold text-white hover:text-indigo-400">Home</a>
+        <a href="/about" class="text-sm font-semibold text-white hover:text-indigo-400">About</a>
+        <a href="/skills" class="text-sm font-semibold text-white hover:text-indigo-400">Skills</a>
+        <a href="/projects" class="text-sm font-semibold text-white hover:text-indigo-400">Projects</a>
+        <a href="/contact" class="text-sm font-semibold text-white hover:text-indigo-400">Contact</a>
+      </div>
+    </nav>
+    
+  </header>
+  <section id="home" class="flex-grow relative  px-6 pt-20 lg:px-8 flex items-center justify-center h-[100vh]">
+
+    <div class="text-center">
+      <h1 class="text-5xl font-semibold tracking-tight sm:text-7xl">Hello, I'm <span class="text-blue-400">Ashish
+          Pokhrel</span></h1>
+      <p class="mt-8 text-lg font-medium text-gray-400 sm:text-xl max-w-2xl mx-auto">
+        I’m a passionate web developer crafting modern, responsive, and elegant web experiences using Tailwind CSS and
+        JavaScript.
+      </p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="#projects"
+          class="rounded-md bg-indigo-500 px-4 py-2.5 text-sm font-semibold text-white shadow hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">View
+          Projects</a>
+      </div>
+    </div>
+  </section>
+ 
+
+  <section id="about" class="relative py-24 bg-gray-900 text-gray-300 h-[100vh]">
+    <div aria-hidden="true" class="absolute inset-0 -z-10 overflow-hidden blur-3xl">
+      <div
+        class="absolute left-1/2 top-0 -translate-x-1/2 w-[50rem] h-[40rem] bg-gradient-to-tr from-indigo-500/40 to-purple-500/40 opacity-30 rounded-full">
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-center text-4xl md:text-5xl font-bold mb-16 text-white">
+        About Me
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+
+        <div class="lg:col-span-2 space-y-6 m-12">
+          <p class="text-lg leading-relaxed text-gray-400">
+            I'm a dedicated backend developer with a passion for creating efficient,
+            scalable solutions. With expertise in technologies such as Laravel,
+            Node.js, React, and various database systems, I enjoy solving complex
+            problems and building tools that positively impact users.
+          </p>
+
+          <p class="text-lg leading-relaxed text-gray-400">
+            I focus on writing clean, maintainable code and choosing the right
+            technology stack for every project. I'm continuously improving my skills
+            and exploring modern tools to build better applications.
+          </p>
+        </div>
+
+     <div class="flex justify-center ml-auto">
+<div class="flex">
+  <div class="backdrop-blur-xl bg-white/5 border border-white/10 p-8 rounded-2xl text-center shadow-lg  w-[35vw] h-[50vh]">
+    <img src="/images/WhatsApp Image 2025-11-16 at 10.49.18 PM.jpeg" alt="Photo" class="w-full h-full object-cover rounded-xl">
+  </div>
+</div>
+
+</div>
+        <div class="lg:col-span-3 flex justify-center">
+          <div class="flex flex-row gap-6 mx-auto max-w-fit">
+
+            <div class="backdrop-blur-xl bg-white/5 border border-white/10 p-8 rounded-2xl text-center shadow-lg">
+              <h3 class="text-4xl font-bold text-indigo-400">2+</h3>
+              <p class="text-gray-400 mt-2 font-medium">Years Experience</p>
+            </div>
+
+            <div class="backdrop-blur-xl bg-white/5 border border-white/10 p-8 rounded-2xl text-center shadow-lg">
+              <h3 class="text-4xl font-bold text-indigo-400">10+</h3>
+              <p class="text-gray-400 mt-2 font-medium">Projects Completed</p>
+            </div>
+
+            <div class="backdrop-blur-xl bg-white/5 border border-white/10 p-8 rounded-2xl text-center shadow-lg">
+              <h3 class="text-4xl font-bold text-indigo-400">5</h3>
+              <p class="text-gray-400 mt-2 font-medium">Technologies Mastered</p>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="skills" class=" dark-gray py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white h-[100vh]">
+    <div class="container px-4">
+      <div class="grid grid-cols-12 gap-4 md:gap-8">
+
+        <div class="col-span-12">
+          <h1 class="text-3xl leading-none font-bold md:text-5xl text-center">Skills</h1>
+        </div>
+        <div class="col-span-12 mt-12">
+          <h4 class="text-2xl font-bold mb-2">Technologies & Frameworks</h4>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="h-10 w-auto" />
+              </div>
+              <h5 class="text-xl font-bold">Python</h5>
+            </div>
+            <p class="opacity-75">Backend development & scripting</p>
+          </div>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="h-10 w-auto" />
+              </div>
+              <h5 class="text-xl font-bold">JavaScript</h5>
+            </div>
+            <p class="opacity-75">Modern web development</p>
+          </div>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="h-10 w-auto" />
+              </div>
+              <h5 class="text-xl font-bold">React</h5>
+            </div>
+            <p class="opacity-75">Building interactive UIs</p>
+          </div>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center p-2">
+                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Tailwind CSS" class="w-full h-full" />
+              </div>
+              <h5 class="text-xl font-bold">Tailwind CSS</h5>
+            </div>
+            <p class="opacity-75">Utility-first CSS framework</p>
+          </div>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="h-10 w-auto" />
+              </div>
+              <h5 class="text-xl font-bold">PHP</h5>
+            </div>
+            <p class="opacity-75">Server-side scripting</p>
+          </div>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" class="h-10 w-auto" />
+              </div>
+              <h5 class="text-xl font-bold">Laravel</h5>
+            </div>
+            <p class="opacity-75">PHP framework for web artisans</p>
+          </div>
+        </div>
+        
+        <!-- SQL -->
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL / MySQL" class="h-10 w-auto" />
+              </div>
+              <h5 class="text-xl font-bold">SQL</h5>
+            </div>
+            <p class="opacity-75">Relational database management</p>
+          </div>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="h-10 w-auto" />
+              </div>
+              <h5 class="text-xl font-bold">MongoDB</h5>
+            </div>
+            <p class="opacity-75">NoSQL database solution</p>
+          </div>
+        </div>
+        
+        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+          <div class="border border-gray-300 dark:border-gray-800 rounded p-4 md:p-6 hover:border-indigo-500 dark:hover:border-indigo-500 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="h-10 w-auto" />
+              </div>
+              <h5 class="text-xl font-bold">Node/Express.js</h5>
+            </div>
+            <p class="opacity-75">JavaScript runtime & web framework</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+ <section id="projects" class="light py-14 md:py-24 bg-white dark:bg-[#0b1727] dark:text-white">
+  <div class="container px-4 text-center">
+
+    <h1 class="text-[32px] md:text-[45px] leading-none font-bold mb-4">
+      Featured Projects
+    </h1>
+
+    <p class="font-medium leading-6 opacity-80 max-w-[650px] mx-auto">
+      A showcase of my recent work including web applications, management systems, and full-stack projects
+    </p>
+
+    <div class="grid grid-cols-2 gap-6 mt-12 md:mt-14">
+
+      <div class="col-span-2 md:col-span-1">
+        <div class="bg-gray-100 dark:bg-[#1E2735] rounded hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 cursor-pointer group">
+          <div class="flex p-4 md:p-6 md:pb-8">
+            <div class="grid grid-cols-12 gap-2 justify-between">
+              <div class="col-span-12">
+                <h5 class="text-xl leading-6 font-medium mb-2 group-hover:text-white">Finance Management</h5>
+                <p class="opacity-80 mb-2 group-hover:text-white">
+                  A comprehensive financial management system for tracking expenses, income, and budgets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-2 md:col-span-1">
+        <div class="bg-gray-100 dark:bg-[#1E2735] rounded hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 cursor-pointer group">
+          <div class="flex p-4 md:p-6 md:pb-8">
+            <div class="grid grid-cols-12 gap-2 justify-between">
+              <div class="col-span-12">
+                <h5 class="text-xl leading-6 font-medium mb-2 group-hover:text-white">Inventory Management System</h5>
+                <p class="opacity-80 mb-2 group-hover:text-white">
+                  Real-time inventory tracking and management solution for businesses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-2 md:col-span-1">
+        <div class="bg-gray-100 dark:bg-[#1E2735] rounded hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 cursor-pointer group">
+          <div class="flex p-4 md:p-6 md:pb-8">
+            <div class="grid grid-cols-12 gap-2 justify-between">
+              <div class="col-span-12">
+                <h5 class="text-xl leading-6 font-medium mb-2 group-hover:text-white">Todo List</h5>
+                <p class="opacity-80 mb-2 group-hover:text-white">
+                  A modern task management app with priority levels and deadline tracking.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-2 md:col-span-1">
+        <div class="bg-gray-100 dark:bg-[#1E2735] rounded hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 cursor-pointer group">
+          <div class="flex p-4 md:p-6 md:pb-8">
+            <div class="grid grid-cols-12 gap-2 justify-between">
+              <div class="col-span-12">
+                <h5 class="text-xl leading-6 font-medium mb-2 group-hover:text-white">Live Chatting</h5>
+                <p class="opacity-80 mb-2 group-hover:text-white">
+                  Real-time messaging application with WebSocket support and instant notifications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-2 md:col-span-1">
+        <div class="bg-gray-100 dark:bg-[#1E2735] rounded hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 cursor-pointer group">
+          <div class="flex p-4 md:p-6 md:pb-8">
+            <div class="grid grid-cols-12 gap-2 justify-between">
+              <div class="col-span-12">
+                <h5 class="text-xl leading-6 font-medium mb-2 group-hover:text-white">Ecommerce</h5>
+                <p class="opacity-80 mb-2 group-hover:text-white">
+                  Full-featured online shopping platform with payment gateway integration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-2 md:col-span-1">
+        <div class="bg-gray-100 dark:bg-[#1E2735] rounded hover:bg-blue-500 dark:hover:bg-blue-600 transition-all duration-300 cursor-pointer group">
+          <div class="flex p-4 md:p-6 md:pb-8">
+            <div class="grid grid-cols-12 gap-2 justify-between">
+              <div class="col-span-12">
+                <h5 class="text-xl leading-6 font-medium mb-2 group-hover:text-white">NBK College</h5>
+                <p class="opacity-80 mb-2 group-hover:text-white">
+                  A responsive college website showcasing information, courses, and campus facilities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="relative py-28 bg-gray-900">
+  <div class="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8">
+    <div class="max-w-lg space-y-3 px-4 sm:mx-auto sm:text-center sm:px-0">
+      <h2 class="text-center text-4xl md:text-5xl font-bold mb-16 text-white">
+        Contact
+      </h2>
+      <p class="text-white text-3xl font-semibold sm:text-4xl">
+        Get in touch
+      </p>
+      <p class="text-gray-300">
+        We’d love to hear from you! Please fill out the form bellow.
+      </p>
+    </div>
+    <div class="mt-12 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 sm:rounded-xl">
+      <div id="formMessage" class="mb-4 p-4 rounded-lg hidden"></div>
+      <form id="contactForm" class="space-y-5">
+        <div>
+          <label class="font-medium">
+            Full name
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="John Doe"
+            class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+          />
+        </div>
+        <div>
+          <label class="font-medium">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+            class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+          />
+        </div>
+
+         <div>
+          <label class="font-medium">
+            Topic
+          </label>
+          <input
+            type="text"
+            name="topic"
+            id="topic"
+            required
+            placeholder="Topic"
+            class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+          />
+        </div>
+       
+        <div>
+          <label class="font-medium">
+            Message
+          </label>
+          <textarea 
+            name="message"
+            id="message"
+            required 
+            placeholder="Your message here..."
+            class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"></textarea>
+        </div>
+        <button
+          type="submit"
+          id="submitBtn"
+          class="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-lg duration-150"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class='absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]' style="background: linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)"></div>
+</section>
+
+  <footer class="py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+    © 2025 Ashish Pokhrel. All rights reserved.
+  </footer>
+</body>
+
