@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('nav a[href^="/"]');
     const sections = document.querySelectorAll('section[id]');
-
+    
     // Map routes to section IDs
     const routeMap = {
         '/': 'home',
