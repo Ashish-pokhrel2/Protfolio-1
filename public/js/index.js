@@ -169,34 +169,27 @@ document.addEventListener('DOMContentLoaded', function () {
 // Theme toggle - runs after DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
   const html = document.documentElement;
-  const body = document.body;
   const themeText = document.getElementById("themeText");
 
   // Load theme or use default (dark)
   let theme = localStorage.getItem("theme") || "dark";
 
-  // Apply theme
   function applyTheme() {
     if (theme === "light") {
-      body.classList.add("light-mode");
       html.classList.remove("dark");
       if (themeText) themeText.textContent = "Dark Mode";
     } else {
-      body.classList.remove("light-mode");
       html.classList.add("dark");
       if (themeText) themeText.textContent = "Bright Mode";
     }
   }
 
-  // Change theme on click - expose globally
   window.changeTheme = function() {
     theme = theme === "dark" ? "light" : "dark";
     localStorage.setItem("theme", theme);
     applyTheme();
-    console.log("Theme changed to:", theme);
   }
 
-  // Run once on load
   applyTheme();
 });
 

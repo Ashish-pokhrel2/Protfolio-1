@@ -28,106 +28,46 @@
     html {
       scroll-behavior: smooth;
     }
-
-    /* Default Dark Mode */
-    body {
-      background-color: #111827;
-      color: #ffffff;
-      transition: background-color 0.3s ease, color 0.3s ease;
+    
+    /* Light mode overrides when dark class is NOT present */
+    html:not(.dark) body {
+      background-color: #ffffff !important;
+      color: #000000 !important;
     }
-
-    /* Light Mode */
-    body.light-mode {
-      background-color: #ffffff;
-      color: #000000;
+    
+    html:not(.dark) section {
+      background-color: #ffffff !important;
     }
-
-    /* Header styles */
-    body header {
-      background-color: rgba(17, 24, 39, 0.8);
-      border-bottom-color: rgba(55, 65, 81, 1);
-    }
-
-    body.light-mode header {
-      background-color: rgba(255, 255, 255, 0.8);
-      border-bottom-color: rgba(229, 231, 235, 1);
-    }
-
-    /* Section backgrounds */
-    body section {
-      background-color: #111827;
-    }
-
-    body.light-mode section {
-      background-color: #ffffff;
-    }
-
-    body section#skills {
-      background-color: #0b1727;
-    }
-
-    body.light-mode section#skills {
-      background-color: #f9fafb;
-    }
-
-    /* Force all text to be visible in light mode */
-    body.light-mode h1,
-    body.light-mode h2,
-    body.light-mode h3,
-    body.light-mode h4,
-    body.light-mode h5,
-    body.light-mode h6,
-    body.light-mode p,
-    body.light-mode span,
-    body.light-mode div,
-    body.light-mode label {
+    
+    html:not(.dark) h1,
+    html:not(.dark) h2,
+    html:not(.dark) h3,
+    html:not(.dark) h4,
+    html:not(.dark) h5,
+    html:not(.dark) p,
+    html:not(.dark) span {
       color: #1f2937 !important;
     }
-
-    body.light-mode .text-white,
-    body.light-mode .text-gray-100,
-    body.light-mode .text-gray-200 {
+    
+    html:not(.dark) .text-white {
       color: #1f2937 !important;
     }
-
-    body.light-mode .text-gray-300,
-    body.light-mode .text-gray-400 {
-      color: #4b5563 !important;
+    
+    html:not(.dark) .text-gray-400 {
+      color: #6b7280 !important;
     }
-
-    body.light-mode .text-blue-400 {
-      color: #3b82f6 !important;
+    
+    html:not(.dark) header {
+      background-color: rgba(255, 255, 255, 0.8) !important;
+      border-bottom-color: #e5e7eb !important;
     }
-
-    body.light-mode .text-indigo-400,
-    body.light-mode .text-indigo-500 {
-      color: #6366f1 !important;
-    }
-
-    /* Links */
-    body.light-mode a {
-      color: #1f2937;
-    }
-
-    body.light-mode a:hover {
-      color: #6366f1;
-    }
-
-    /* Card backgrounds in light mode */
-    body.light-mode .bg-gray-100 {
-      background-color: #f3f4f6 !important;
-    }
-
-    body.light-mode .backdrop-blur-xl {
-      background-color: rgba(255, 255, 255, 0.1) !important;
-    }
-
-    body.light-mode button {
-      color: inherit;
+    
+    html:not(.dark) a {
+      color: #1f2937 !important;
     }
   </style>
 </head>
-<body class="flex flex-col min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white overflow-x-hidden">
+<body class="flex flex-col min-h-screen bg-gray-900 text-white overflow-x-hidden">
 <header class="sticky top-0 inset-x-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
   <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
 
