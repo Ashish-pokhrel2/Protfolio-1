@@ -76,7 +76,7 @@ app.post('/send-email', async (req, res) => {
   // Email options
   const mailOptions = {
     from: `"${name}" <${process.env.SMTP_USER}>`,
-    to: process.env.RECEIVER_EMAIL || process.env.SMTP_USER, // Where you want to receive emails
+    to: process.env.RECEIVER_EMAIL || process.env.SMTP_USER, 
     replyTo: email,
     subject: `Portfolio Contact: ${topic}`,
     html: `

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('nav a[href^="/"]');
     const sections = document.querySelectorAll('section[id]');
-    
+
     // Map routes to section IDs
     const routeMap = {
         '/': 'home',
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
         '/contact': 'contact'
     };
 
-    // Get current route and scroll to section
     function scrollToSection(route) {
         const sectionId = routeMap[route];
         if (sectionId) {
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Update active navigation link based on scroll position
     function updateActiveNav() {
         let current = '';
         const scrollPosition = window.scrollY;
@@ -52,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Update URL based on current section
         if (current) {
             const currentRoute = current === 'home' ? '/' : '/' + current;
             if (window.location.pathname !== currentRoute) {
@@ -67,10 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             const route = this.getAttribute('href');
 
-            // Update browser history
             history.pushState(null, null, route);
 
-            // Scroll to section
             scrollToSection(route);
         });
     });
@@ -168,3 +163,76 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+
+// Theme toggle - runs after DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+  const html = document.documentElement;
+  const body = document.body;
+  const themeText = document.getElementById("themeText");
+
+  // Load theme or use default (dark)
+  let theme = localStorage.getItem("theme") || "dark";
+
+  // Apply theme
+  function applyTheme() {
+    if (theme === "light") {
+      body.classList.add("light-mode");
+      html.classList.remove("dark");
+      if (themeText) themeText.textContent = "Bright Mode";
+    } else {
+      body.classList.remove("light-mode");
+      html.classList.add("dark");
+      if (themeText) themeText.textContent = "Dark Mode";
+    }
+  }
+
+  // Change theme on click - expose globally
+  window.changeTheme = function() {
+    theme = theme === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", theme);
+    applyTheme();
+    console.log("Theme changed to:", theme);
+  }
+
+  // Run once on load
+  applyTheme();
+});
+
+
+
+function directToProject(project){
+    if (project == "nbk") {
+      window.location.href = "https://nbkcollege.com"; 
+    }
+
+    else if(project == "chatmeDaddy"){
+         window.location.href = "https://chatmedaddy.netlify.app/"; 
+
+    }
+    else if(project == "todoList"){
+                window.location.href = "https://todo-list-mu-ebon-96.vercel.app/"; 
+ 
+    }
+
+
+
+}
+//    const signupBtn = document.getElementById("signupBtn");
+//    console.log(signupBtn)
+
+//     // Scroll to top when Sign Up is clicked
+//     signupBtn.addEventListener("click", () => {
+//       window.scrollTo({
+//         top: 0,
+//         behavior: "smooth"
+//       });
+//     });
+
+    function scrollFunction(){
+       window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+     }
