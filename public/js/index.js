@@ -180,11 +180,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (theme === "light") {
       body.classList.add("light-mode");
       html.classList.remove("dark");
-      if (themeText) themeText.textContent = "Bright Mode";
+      if (themeText) themeText.textContent = "Dark Mode";
     } else {
       body.classList.remove("light-mode");
       html.classList.add("dark");
-      if (themeText) themeText.textContent = "Dark Mode";
+      if (themeText) themeText.textContent = "Bright Mode";
     }
   }
 
