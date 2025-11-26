@@ -48,6 +48,11 @@ app.get('/skills', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Route for gallery section
+app.get('/gallery', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 // Route for projects section
 app.get('/projects', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
@@ -60,6 +65,7 @@ app.get('/contact', (req, res) => {
 
 // Static files - AFTER routes
 app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Contact form endpoint
 app.post('/send-email', async (req, res) => {
